@@ -153,12 +153,16 @@ li {
 }
 .man-info-heading {
     font-size: 25px;
+    color: #686868;
 }
 .man-heading-wrapper {
     display: flex;
 }
 .man-block-info {
     color: #4f4f4f;
+}
+.vacation-city-wrapper {
+    display: flex;
 }
 .about-man img {
     width: 350px;
@@ -304,8 +308,9 @@ margin-top: 45px;
 }
 .third-block-text {
     width: 155px;
-    position: absolute;
-    right: 40px;
+    margin-left: 15px;
+    /*position: absolute;*/
+    /*right: 40px;*/
 }
 .third-block-title {
     font-size: 25px;
@@ -394,6 +399,7 @@ margin-top: 45px;
 .slider {
     background-color: #fafafa;
     padding: 25px 0 50px 0;
+    margin-top: 15px;
 }
 .workWithUs {
     display: flex;
@@ -590,7 +596,42 @@ margin-top: 7px;
 .footer {
     padding-bottom: 50px;
 }
+@media screen and (max-width: 1280px) {
+    .block-wrapper {
+        display: block;
+        height: 100%;
+    }
+    .first-block,
+    .second-block,
+    .third-block
+    {
+        margin: 10px auto;
+    }
+    .about-game {
+        background-color: transparent;
+    }
+    .slider_inner {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .slick-next {
+        right: -27px;
+    }
+}
 @media screen and (max-width: 991px) {
+    .vacancies {
+        display: block;
+    }
+    .infoForUserWrapper {
+        display: block;
+    }
+    .infoForUserWrapper > div {
+        width: 280px;
+        margin: 0 auto;
+    }
+    .right-vacancies {
+        margin-top: 15px;
+    }
     .menu {
         display: none;
         position: absolute;
@@ -660,9 +701,81 @@ margin-top: 7px;
         margin: 8px 0;
     }
 }
+@media screen and (max-width: 768px) {
+    .about-man {
+        display: block;
+        text-align: center;
+    }
+    .man-heading-wrapper {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .footerMenu {
+        display: block;
+    }
+    .man-info .strip {
+        margin: 0 auto;
+    }
+    .man-info .strip {
+        display: none;
+    }
+    .man-info {
+        margin-left: 0;
+    }
+    .left-vacancies,
+    .right-vacancies {
+        width: 280px;
+        margin: 8px auto;
+    }
+    .location-wrapper {
+        display: block;
+    }
+    .vacation-time {
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .first-block {
+        display: block;
+        text-align: center;
+        width: 300px;
+    }
+    .first-block,
+    .second-block,
+    .third-block {
+        width: 300px;
+    }
+    .about-people,
+    .workWithUs{
+        display: block;
+    }
+    .about-people-title {
+        margin: 0 auto;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .slick-btn {
+        width: 30px;
+        height: 30px;
+        top: 15px;
+    }
+    .slick-slide img {
+        margin: 0 auto;
+    }
+    .slick-prev {
+        left: 70px;
+    }
+    .slick-next {
+        right: 70px;
+    }
+}
 @media screen and (max-width: 450px) {
     .menu-wrapper {
         display: block;
+    }
+    .about-man img {
+        display: none;
     }
     .menu-btn {
         margin: 0 auto;
@@ -674,6 +787,10 @@ margin-top: 7px;
     .menu {
         left: 12%;
         top: 56%;
+    }
+    .footerRow2 {
+        display: block;
+        text-align: center;
     }
     .mainInfo {
         width: 300px;
