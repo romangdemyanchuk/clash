@@ -72,6 +72,9 @@ li {
     font-weight: 600;
     margin-left: 18px;
 }
+.menu li:hover {
+    cursor: pointer;
+}
 .mainInfo {
     width: 450px;
     color: #fff;
@@ -178,7 +181,7 @@ li {
     padding: 2px 0 5px 5px;
 }
 .fa-envelope:before {
-    color: lavender;
+    color: #000;
 }
 .menu-wrapper {
     display: flex;
@@ -198,6 +201,9 @@ li {
     padding: 3px 0 0 7px;
     margin-right: 10px;
 }
+.socials li:hover {
+    cursor: pointer;
+}
 .facebook-icon {
     background-color: #407a86;
 }
@@ -212,6 +218,9 @@ li {
 }
 .country-wrapper i {
     margin: 5px 0 0 10px;
+}
+.country-wrapper {
+    cursor: pointer;
 }
 .menu i {
     margin: 5px 0 0 4px;
@@ -253,6 +262,13 @@ li {
     border: 2px solid #eb5635;
     border-radius: 50%;
     padding: 4px 13px;
+    transition: .7s ease;
+}
+.about-game-btn1-number:hover,
+.about-game-btn2-number:hover {
+    background-color: #eb5635;
+    color: #fff;
+    cursor: pointer;
 }
 .about-game-btn1-text,
 .about-game-btn2-text {
@@ -323,7 +339,11 @@ margin-top: 45px;
     background-color: transparent;
     border: 3px solid #fff;
     color: #fff;
-    margin-top: 45px;
+    margin: 45px 0 25px 0;
+}
+.third-block-btn:hover {
+    background-color: #eb5635;
+    border-color: #eb5635;
 }
 .third-block-subtitle {
     font-weight: 400;
@@ -537,6 +557,10 @@ padding-bottom: 20px;
     color: #eb5635;
     margin: 12px 0;
 }
+.envelope-wrapper:hover {
+    border-color: #000;
+    cursor: pointer;
+}
 .tweetsWrapperText {
     color: #b1b1b1;
     margin-top: 8px;
@@ -654,6 +678,9 @@ margin-top: 7px;
         position: relative;
         margin-top: 12px;
         margin-left: 5px;
+    }
+    .menu-btn:hover {
+        cursor: pointer;
     }
     .menu-btn span{
         width: 100%;
