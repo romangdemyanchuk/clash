@@ -235,7 +235,7 @@ li {
     height: 100%;
 }
 .first-block-text {
-    margin: 0 auto;
+    margin: 0 auto 0 15px;
     width: 170px;
 }
 .about-game-title,
@@ -350,7 +350,7 @@ margin-top: 45px;
     border-color: #eb5635;
 }
 .first-block-btn {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .third-block-subtitle {
     font-weight: 400;
