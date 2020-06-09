@@ -168,7 +168,7 @@ li {
     display: flex;
 }
 .about-man img {
-    width: 350px;
+    height: 400px;
 }
 .man-block-text {
     color: #ededed;
@@ -226,16 +226,16 @@ li {
     margin: 5px 0 0 4px;
 }
 .first-block {
-    width: 500px;
+    width: 360px;
     display: flex;
     background-color: #fff;
 }
 .first-block-img {
-    width: 255px;
+    width: 180px;
     height: 100%;
 }
 .first-block-text {
-    margin: 30px auto;
+    margin: 0 auto;
     width: 170px;
 }
 .about-game-title,
@@ -283,15 +283,17 @@ margin-top: 45px;
     margin-top: 40px;
 }
 .second-block {
-    width: 245px;
+    width: 200px;
     background-color: #fff;
+    margin: 0 15px;
 }
 .carImg {
     width: 100%;
-    height: 245px;
+    height: 200px;
 }
 .second-block-title {
     width: 150px;
+    margin-top: 15px;
 }
 .second-block-info {
     width: 150px;
@@ -304,7 +306,7 @@ margin-top: 45px;
     margin-bottom: 10px;
 }
 .third-block {
-    width: 510px;
+    width: 380px;
     background-image: url(../images/warrior.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -312,6 +314,7 @@ margin-top: 45px;
     color: #fff;
     font-weight: 100;
 }
+.homefront {}
 .ios7 {
     width: 64px;
     height: 21px;
@@ -339,11 +342,15 @@ margin-top: 45px;
     background-color: transparent;
     border: 3px solid #fff;
     color: #fff;
-    margin: 45px 0 25px 0;
+    margin: 15px 0 25px 0;
+    transition: .7s ease;
 }
 .third-block-btn:hover {
     background-color: #eb5635;
     border-color: #eb5635;
+}
+.first-block-btn {
+    margin-top: 30px;
 }
 .third-block-subtitle {
     font-weight: 400;
@@ -353,8 +360,11 @@ margin-top: 45px;
 }
 .block-wrapper {
     display: flex;
-    justify-content: space-evenly;
-    height: 480px;
+    justify-content: center;
+    height: 420px;
+    margin-top: -90px;
+    position: relative;
+    z-index: 5000;
 }
 .about-people .strip {
     width: 35px;
@@ -363,7 +373,7 @@ margin-top: 45px;
 .about-people {
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 65px;
 }
 .about-people-title {
     font-size: 23px;
@@ -624,12 +634,13 @@ margin-top: 7px;
     .block-wrapper {
         display: block;
         height: 100%;
+        margin: 0;
     }
     .first-block,
     .second-block,
     .third-block
     {
-        margin: 10px auto;
+        margin: 15px auto;
     }
     .about-game {
         background-color: transparent;
@@ -667,6 +678,9 @@ margin-top: 7px;
         background-color: #2e343b;
         color: #fff;
         border-radius: 10px;
+    }
+    .about-man img {
+        height: 240px;
     }
     .menu li {
         display: block;
